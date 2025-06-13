@@ -20,6 +20,6 @@ Apuntes, teoría y prácticas explicadas de forma sencilla para estudiantes, aut
 
 ## Licencia
 
-[![License: CC BY-SA 4.0](J:\Mi%20unidad\GitHubLocal\YoInformatico\by-sa.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](by-sa.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
 Este trabajo está bajo licencia **Creative Commons Attribution‑ShareAlike 4.0 International (CC BY‑SA 4.0)**.
