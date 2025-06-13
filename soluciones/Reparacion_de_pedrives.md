@@ -62,7 +62,7 @@ Los siguientes pasos pueden arreglar pendrives averiados o mal formateados media
 
 `create partition primary`  
 
-`select partition 1`  
+`select partition X`   ← sustituye X por el número correcto 
 
 `active ` 
 
