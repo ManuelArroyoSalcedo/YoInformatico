@@ -44,7 +44,7 @@ Los siguientes pasos pueden arreglar pendrives averiados o mal formateados media
 
 `list disk`
 
-`select disk 1 `      
+`select disk X `  ← sustituye X por el número correcto    
 
 3º    Quita posibles bloqueos de sólo lectura
 
@@ -62,7 +62,7 @@ Los siguientes pasos pueden arreglar pendrives averiados o mal formateados media
 
 `create partition primary`  
 
-`select partition X`   ← sustituye X por el número correcto 
+`select partition 1`    
 
 `active ` 
 
