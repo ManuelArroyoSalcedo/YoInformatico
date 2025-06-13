@@ -37,22 +37,29 @@ Los siguientes pasos pueden arreglar pendrives averiados o mal formateados media
 #### Secuencia de pasos
 
 1º Abre CMD como Administrador y lanza DiskPart
+
 `diskpart  `
 
 2º Selecciona tu pendrive
-`list disk  
-select disk 1 `      
+
+`list disk`
+
+`select disk 1 `      
 
 3º    Quita posibles bloqueos de sólo lectura
+
 `attributes disk clear readonly  `
 
 4º    Limpia todo el disco (esto borra particiones, MBR/GPT, tablas, etc.)
+
 `clean  `
 
 5º    Convierte a MBR (opcional pero suele funcionar mejor para USBs que van a usarse en Windows y BIOS)
+
 `convert mbr  `
 
 6º    Crea y marca activa la partición
+
 `create partition primary`  
 
 `select partition 1`  
@@ -60,23 +67,29 @@ select disk 1 `
 `active ` 
 
 7º    Fuerza a DiskPart a re-detectar volúmenes
+
 `rescan`  
 
 8º    Localiza el volumen que corresponde a tu partición
+
 `list volume`  
 
 9º    Selecciona ese volumen y asígnale letra
+
 `select volume X`      ← sustituye X por el número correcto  
 
 `assign letter=t`      ← o la letra que prefieras  
 
 10º    Formatea rápido en FAT32 (o NTFS si lo prefieres)
+
 `format fs=fat32 label=MI_USB quick`  
 
 — Para NTFS:
+
 `format fs=ntfs label=MI_USB quick`  
 
 11º    Sal de DiskPart
+
 `exit`
 
 
